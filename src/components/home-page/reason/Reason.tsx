@@ -7,7 +7,7 @@ export const Reason = () => {
   return (
     <div className='reason-container'>
       {tech.map((item) => (
-        <div className='small-card'>
+        <div className='small-card' key={item}>
           <CodeIcon sx={{ fontSize: '50px', color: '#fff' }} />
           <h4>{item}</h4>
         </div>
