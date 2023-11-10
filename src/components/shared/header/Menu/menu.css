@@ -1,0 +1,15 @@
+.container-menu {
+  display: flex;
+  gap: 60px;
+
+  .button {
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--var-text-secondary);
+
+    &:hover {
+      color: var(--var-text-primary);
+    }
+  }
+}

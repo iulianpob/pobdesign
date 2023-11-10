@@ -1,0 +1,20 @@
+:root {
+  font-family: 'Roboto Mono', monospace;
+  --var-background: #1f2f55;
+  --var-text-primary: #e9f9ff;
+  --var-text-secondary: #b2d9f6;
+  --var-text-hover: #6ca9d9;
+  --var-button-primary: #3f6799;
+  --var-button-hover: #336699;
+  --var-accent: #2a5985;
+  --var-accent-hover: #427399;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

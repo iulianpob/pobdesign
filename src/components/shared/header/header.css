@@ -1,0 +1,32 @@
+.container-header {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+
+  .header-logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .header-social {
+    display: flex;
+    gap: 20px;
+    padding: 10px 14px 10px 14px;
+    border: 1px solid white;
+    border-radius: 50px;
+
+    .button {
+      font-size: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      color: var(--var-text-secondary);
+
+      &:hover {
+        color: var(--var-text-primary);
+      }
+    }
+  }
+}
