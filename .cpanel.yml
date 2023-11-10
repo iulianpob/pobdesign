@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pobdesig/design.pobdesign.ro
+    - /bin/cp -R dist $DEPLOYPATH
