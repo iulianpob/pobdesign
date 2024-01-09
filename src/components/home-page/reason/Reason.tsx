@@ -37,6 +37,7 @@ export const Reason = () => {
     <div className='reason-container'>
       {tech2.map((tech, index) => {
         const IconComponent = iconComponents[tech.name + 'Icon'];
+        const testS=1;
         return (
             <a href={tech.link} target="_blank" key={index} className='small-card'>
               <IconComponent />
