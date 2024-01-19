@@ -1,11 +1,10 @@
 import './reason.css';
-import { ReactIcon, NodeIcon, AngularIcon, WordpressIcon } from '../../../assets/Icon/Icon';
-
+import * as Icons from '../../../assets/Icon/Icon';
 const iconComponents = {
-  ReactIcon,
-  NodeIcon,
-  AngularIcon,
-  WordpressIcon,
+  ReactIcon: Icons.ReactIcon,
+  NodeIcon: Icons.NodeIcon,
+  AngularIcon: Icons.AngularIcon,
+  WordpressIcon: Icons.WordpressIcon,
 };
 
 interface ITech {
@@ -36,9 +35,9 @@ export const Reason = () => {
   return (
     <div className='reason-container'>
       {tech2.map((tech, index) => {
-        const IconComponent = iconComponents[tech.name + 'Icon'];
+        const IconComponent = iconComponents[tech.name + 'Icon' as keyof typeof iconComponents];
         return (
-            <a href={tech.link} target="_blank" key={index} className='small-card'>
+            <a href={tech.link} key={index} className='small-card'>
               <IconComponent />
             </a>
         );
