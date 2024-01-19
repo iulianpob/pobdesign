@@ -11,6 +11,7 @@
 
   &:hover {
     transform: translateY(-20px);
+    cursor: pointer;
   }
 }
 h4 {
