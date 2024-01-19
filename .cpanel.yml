@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pobdesig/public_html
+    - export DEPLOYPATH=/home/pobdesig/public_html/dist
     - /bin/cp -R dist $DEPLOYPATH
